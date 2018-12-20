@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "huyegger/version"
+require "json_logger/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "huyegger"
-  spec.version       = Huyegger::VERSION
-  spec.authors       = ["Nikolay Markov"]
-  spec.email         = ["mainameiz@gmail.com"]
+  spec.name          = "json_logger"
+  spec.version       = JsonLogger::VERSION
+  spec.authors       = ["Nikolay Markov", "Gabriel Haba"]
+  spec.email         = ["gabriel@apptweak.com"]
 
-  spec.summary       = %q{JSON Logger for ruby}
-  spec.homepage      = "http://github.com/mainameiz/huyegger"
+  spec.summary       = %q{Ruby JSON Logger}
+  spec.homepage      = "https://github.com/apptweak/json_logger"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
@@ -33,4 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.10"
   spec.add_development_dependency "timecop", "~> 0.9"
+
+  spec.add_runtime_dependency "binding_of_caller"
 end

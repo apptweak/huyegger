@@ -1,2 +1,2 @@
 require "minitest/autorun"
-require "huyegger"
+require "json_logger"

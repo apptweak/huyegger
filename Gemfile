@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in huyegger.gemspec
+# Specify your gem's dependencies in json_logger.gemspec
 gemspec

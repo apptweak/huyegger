@@ -1,7 +1,7 @@
-require "huyegger/version"
-require "huyegger/logger"
+require "json_logger/version"
+require "json_logger/logger"
 
-module Huyegger
+module JsonLogger
   DEFAULT_JSON_ENCODER = proc { |obj, *opts| obj.to_json(*opts) }
 
   class << self
